@@ -12,6 +12,6 @@ s.listen()
 
 while True:
     client, address = s.accept()
-    print(f"connected to {address}")
+    print("connected to {}".format(address))
     client.send("You are connected".encode())
     client.close()
